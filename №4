@@ -1,1 +1,9 @@
-
+import numpy as np
+import math 
+from statistics import variance
+r_1=np.random.uniform(0,1)
+r_2=np.random.uniform(0,1)
+eps_1=math.sqrt(-2*math.log(r_1))*np.sin(2*math.pi*r_2)
+eps_2=math.sqrt(-2*math.log(r_1))*np.cos(2*math.pi*r_2)
+print(eps_2, eps_1)
+print(np.mean(eps_2), np.var(eps_2))
